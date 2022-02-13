@@ -1,2 +1,3 @@
-source/* linguist-vendored
+* linguist-vendored
 *.php linguist-vendored=false
+*.sql linguist-language=TSQL
