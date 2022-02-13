@@ -1,0 +1,342 @@
+/* font size */
+/* color */
+/* bg color */
+/* color */
+/* line 10, ../../../sass/colors/red/style.scss */
+a:hover {
+  color: #f64243;
+}
+
+/* line 14, ../../../sass/colors/red/style.scss */
+.error {
+  color: #f64243;
+}
+
+/* line 17, ../../../sass/colors/red/style.scss */
+.btn-primary {
+  background-color: #f64243;
+  border-color: #f64243;
+}
+/* line 20, ../../../sass/colors/red/style.scss */
+.btn-primary:hover {
+  background-color: black;
+  border-color: black;
+}
+
+/* line 27, ../../../sass/colors/red/style.scss */
+.btn-default:hover {
+  background-color: #f64243;
+  border-color: #f64243;
+  color: #fff;
+}
+
+/* line 33, ../../../sass/colors/red/style.scss */
+.btn-active {
+  background-color: #f64243;
+  border-color: #f64243;
+}
+
+/* line 38, ../../../sass/colors/red/style.scss */
+.close:hover, .close:focus {
+  color: #f64243;
+}
+
+/* line 42, ../../../sass/colors/red/style.scss */
+.divider {
+  background-color: #f64243;
+}
+
+/* line 45, ../../../sass/colors/red/style.scss */
+.bg-color1 {
+  background-color: #f64243 !important;
+}
+
+/* line 48, ../../../sass/colors/red/style.scss */
+.bg-color2 {
+  background-color: #2a688f !important;
+}
+
+/* line 51, ../../../sass/colors/red/style.scss */
+.bg-color3 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* line 54, ../../../sass/colors/red/style.scss */
+.bg-color4 {
+  background-color: #ededed !important;
+}
+
+/* line 57, ../../../sass/colors/red/style.scss */
+.bg-color5 {
+  background-color: #fff !important;
+}
+
+/* line 60, ../../../sass/colors/red/style.scss */
+.bg-color6 {
+  background-color: #222222;
+}
+
+/* line 63, ../../../sass/colors/red/style.scss */
+.bg-color7 {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Header */
+/* line 70, ../../../sass/colors/red/style.scss */
+.nav-top > li > a:hover, .nav-top > li > a:focus {
+  color: #f64243;
+}
+/* line 72, ../../../sass/colors/red/style.scss */
+.nav-top > li > a:hover .fa, .nav-top > li > a:focus .fa {
+  color: #f64243;
+}
+
+/* line 81, ../../../sass/colors/red/style.scss */
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  color: #f64243;
+}
+/* line 85, ../../../sass/colors/red/style.scss */
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  color: #f64243;
+}
+
+/* line 92, ../../../sass/colors/red/style.scss */
+.nav-main-menu > li > a:after {
+  background-color: #f64243;
+}
+/* line 95, ../../../sass/colors/red/style.scss */
+.nav-main-menu > li > a:hover, .nav-main-menu > li > a:focus {
+  background-color: transparent;
+}
+
+/* line 103, ../../../sass/colors/red/style.scss */
+.menu-column-inner .product-price ins {
+  color: #f64243;
+}
+
+/* line 111, ../../../sass/colors/red/style.scss */
+.header-top .nav-top > li > a:hover, .header-top .nav-top > li > a:focus {
+  color: #f64243;
+}
+/* line 113, ../../../sass/colors/red/style.scss */
+.header-top .nav-top > li > a:hover .fa, .header-top .nav-top > li > a:focus .fa {
+  color: #f64243;
+}
+/* line 122, ../../../sass/colors/red/style.scss */
+.header-top .shopping-cart a span span {
+  color: #f64243;
+}
+
+/* countdown */
+/* line 130, ../../../sass/colors/red/style.scss */
+.countdown {
+  border-top-color: #f64243;
+}
+
+/* grid-tabs */
+/* line 138, ../../../sass/colors/red/style.scss */
+.grid-tabs > li.active > a, .grid-tabs > li.active > a:hover, .grid-tabs > li.active > a:focus {
+  border-top-color: #f64243;
+}
+
+/* search */
+/* line 146, ../../../sass/colors/red/style.scss */
+.form-search .btn:hover, .form-search .btn:focus {
+  color: #f64243;
+}
+
+/* line 154, ../../../sass/colors/red/style.scss */
+.cat-thumb-act a:hover {
+  color: #f64243;
+}
+
+@media (max-width: 360px) {
+  /* line 161, ../../../sass/colors/red/style.scss */
+  .cat-thumb-item-content-wrap.bg-color1 {
+    background-color: rgba(246, 66, 67, 0.8) !important;
+  }
+}
+
+/* line 168, ../../../sass/colors/red/style.scss */
+.cat-thumb-video .cat-thumb-item-img:after {
+  background-color: rgba(246, 66, 67, 0.1);
+}
+
+/* line 173, ../../../sass/colors/red/style.scss */
+.cat-caption {
+  background-color: rgba(246, 66, 67, 0.9);
+}
+
+/* line 180, ../../../sass/colors/red/style.scss */
+.owl-theme .owl-controls .owl-buttons div:hover {
+  background-color: #f64243;
+  border-color: #f64243;
+}
+
+/* post img slide */
+/* line 191, ../../../sass/colors/red/style.scss */
+.pgl-img-slide .owl-controls .owl-buttons div:hover {
+  background-color: #f64243;
+  border-color: #f64243;
+}
+
+/* second slides */
+/* line 201, ../../../sass/colors/red/style.scss */
+.second-slides .slide-item-caption-info h1 {
+  color: #f64243;
+}
+
+/* line 208, ../../../sass/colors/red/style.scss */
+.highlight-slide h3 a:hover, .highlight-slide h3 a:focus, .highlight-slide .product-price ins {
+  color: #f64243;
+}
+
+/* line 215, ../../../sass/colors/red/style.scss */
+.product-cat a:hover {
+  color: #f64243;
+}
+
+/* line 221, ../../../sass/colors/red/style.scss */
+.thumb-act-more .btn-cart {
+  background-color: #f64243;
+}
+
+/* line 227, ../../../sass/colors/red/style.scss */
+.list-review a:hover, .list-review a:focus {
+  color: #f64243;
+}
+
+/* summary */
+/* line 236, ../../../sass/colors/red/style.scss */
+.summary .product-cat a:hover, .summary .product-cat a:focus {
+  color: #f64243;
+}
+
+/* _shopping-cart */
+/* line 243, ../../../sass/colors/red/style.scss */
+.product-subtotal, .total .amount {
+  color: #f64243;
+}
+
+/* Blog */
+/* line 247, ../../../sass/colors/red/style.scss */
+.post-date {
+  background-color: #f64243;
+}
+
+/* line 253, ../../../sass/colors/red/style.scss */
+.post-large blockquote footer cite, .post-mansory-item .post-mid blockquote footer cite {
+  color: #f64243;
+}
+
+/* line 260, ../../../sass/colors/red/style.scss */
+.post-info a:hover, .post-info a:focus {
+  color: #f64243;
+}
+
+/* Sidebar */
+/* line 265, ../../../sass/colors/red/style.scss */
+.blk-categories {
+  background-color: #f64243;
+}
+
+/* line 269, ../../../sass/colors/red/style.scss */
+.blk-highlight:after {
+  border-top-color: #f64243;
+}
+/* line 272, ../../../sass/colors/red/style.scss */
+.blk-highlight h4 {
+  color: #f64243;
+}
+
+/* featured-foot */
+/* line 278, ../../../sass/colors/red/style.scss */
+.contact-info-wrap:after {
+  background-color: rgba(246, 66, 67, 0.9);
+}
+
+/* line 284, ../../../sass/colors/red/style.scss */
+.newsletter-form .form-control:focus {
+  border-bottom-color: #f64243;
+}
+
+/* Scroll to Top */
+/* line 291, ../../../sass/colors/red/style.scss */
+.scroll-to-top:hover {
+  background-color: #f64243;
+  border-color: #f64243;
+}
+
+/* Panel in offcanvas */
+/* line 298, ../../../sass/colors/red/style.scss */
+.uk-offcanvas .uk-panel h3 a:hover, .uk-offcanvas .uk-panel h3 a:focus {
+  color: #f64243;
+}
+/* line 301, ../../../sass/colors/red/style.scss */
+.uk-offcanvas .uk-panel .product-price ins {
+  color: #f64243;
+}
+
+/* line 307, ../../../sass/colors/red/style.scss */
+.uk-nav-offcanvas a:hover, .uk-nav-offcanvas a:focus {
+  color: #f64243;
+}
+
+/* line 313, ../../../sass/colors/red/style.scss */
+.uk-nav-sub .active a {
+  color: #f64243;
+}
+
+@media (max-width: 991px) {
+  /* line 319, ../../../sass/colors/red/style.scss */
+  .uk-navbar-toggle:hover, .uk-navbar-toggle:focus {
+    color: #f64243;
+  }
+}
+/* #Footer */
+/* line 327, ../../../sass/colors/red/style.scss */
+#footer a:hover {
+  color: #f64243;
+}
+/* line 332, ../../../sass/colors/red/style.scss */
+#footer address a:hover, #footer .footer-copyright p a:hover {
+  color: #f64243;
+}
+/* line 336, ../../../sass/colors/red/style.scss */
+#footer .latest-tweets a {
+  color: #f64243;
+}
+/* line 338, ../../../sass/colors/red/style.scss */
+#footer .latest-tweets a:hover {
+  color: #777777;
+}
+/* line 343, ../../../sass/colors/red/style.scss */
+#footer .card-icons a:hover {
+  color: #f64243;
+}
+
+/* line 350, ../../../sass/colors/red/style.scss */
+.social-icons a:after {
+  background-color: #f64243;
+}
+
+/* line 357, ../../../sass/colors/red/style.scss */
+#footer.bg-color6 a:hover {
+  color: #f64243;
+}
+/* line 362, ../../../sass/colors/red/style.scss */
+#footer.bg-color6 address a:hover, #footer.bg-color6 .footer-copyright p a:hover {
+  color: #f64243;
+}
+/* line 366, ../../../sass/colors/red/style.scss */
+#footer.bg-color6 .latest-tweets a {
+  color: #f64243;
+}
+/* line 368, ../../../sass/colors/red/style.scss */
+#footer.bg-color6 .latest-tweets a:hover {
+  color: #777777;
+}
+/* line 373, ../../../sass/colors/red/style.scss */
+#footer.bg-color6 .card-icons a:hover {
+  color: #f64243;
+}

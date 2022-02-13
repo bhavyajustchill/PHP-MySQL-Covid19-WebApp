@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+			<meta name="keywords" content="HTML5 Template" />
+		<meta name="description" >
+		<meta name="author" content="pixelgeeklab.com">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Web Fonts  -->
+		<link href='fonts/font.css' rel='stylesheet' type='text/css'>
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.css" media="screen">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.theme.css" media="screen">
+		<link href="vendor/owl-carousel/owl.transitions.html" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="vendor/flexslider/flexslider.css" media="screen">
+		<link rel="stylesheet" href="vendor/chosen/chosen.css" media="screen">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen">
+        <link rel="stylesheet" href="css/colors/style.css" media="screen">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-animate.css">
+		
+		<!-- angular js -->
+		<script src="js/angular-1.3.js"></script>
+		<script src="js/angular_cookies.js"></script>
+
+		<!-- Style Switcher-->
+	<link href="css/colors/default/style.html" rel="stylesheet" id="layoutstyle">
+
+		<!-- Head libs -->
+		<script src="vendor/modernizr/modernizr.js"></script>
+
+		<!--[if IE]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+
+		<!--[if lte IE 8]>
+			<script src="vendor/respond/respond.js"></script>
+			<script src="vendor/excanvas/excanvas.js"></script>
+
+
+
+
+		<![endif]-->
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/modernizr-2.6.2.min.js"></script>
+
+ <link rel="stylesheet" href="css/tab.css">
+	  <link rel="stylesheet" href="css/radio.css">
+        <style>
+
+
+
+            .page-wrap {
+                max-width: 75rem;
+                margin: 0 auto;
+            }
+
+            h1 {
+
+                font-size: 1.5rem;
+                letter-spacing: -1px;
+                margin: 1.25rem 0;
+            }
+
+            input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+                font-size: 0.75em;
+
+                top: -2.25rem;
+                -webkit-transition: all 0.125s ease;
+                transition: all 0.125s ease;
+            }
+
+            .styled-input {
+                left:10px;
+                width: 90%;
+                margin: 2rem 0 1rem;
+                position: relative;
+            }
+
+            .styled-input label {
+                color: #999;
+                padding: 1rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                -webkit-transition: all 0.25s ease;
+                transition: all 0.25s ease;
+                pointer-events: none;
+            }
+
+
+
+            input,
+            textarea {
+                position: relative;
+                height: 2.9em;
+                border: 0px solid #bebebe;
+                border-bottom-width: 1px;
+                width: 100%;
+            }
+
+            input ~ span,
+            textarea ~ span {
+                display: block;
+                width: 0;
+                height:1px;
+                background: #03a3e8;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                -webkit-transition: all 0.125s ease;
+                transition: all 0.125s ease;
+            }
+
+            input:focus,
+            textarea:focus { outline: 0; }
+
+            input:focus ~ span,
+            textarea:focus ~ span {
+                width: 100%;
+                -webkit-transition: all 0.075s ease;
+                transition: all 0.075s ease;
+            }
+
+            textarea {
+                width: 100%;
+                min-height: 15em;
+            }
+        </style>
+<!-- script back button -->
+	<script src="cordova.js"></script>
+	<script>
+	function onLoad() 
+	{
+		document.addEventListener("deviceready", deviceReady, false);
+	}
+	function deviceReady() 
+	{
+		document.addEventListener("backbutton", backButtonCallback, false);
+	}
+	function backButtonCallback() 
+	{
+		navigator.app.backHistory();
+	}
+	</script>
+
+    </head>
+	<body  style="background-color: #eafbea"  ng-controller="myappCtrl">
+<div class="body">
+			<header id="header">
+				<div class="header-top" style="height:8em;">
+					<div class="container">
+						<a href="#offcanvas" class="uk-navbar-toggle" style="float:left; margin:50px 5px 10px 5px;" data-uk-offcanvas>
+							<span class="sr-only">Toggle navigation</span>
+							<i class="fa fa-bars"></i>
+						</a>
+                        <nav>
+							<ul class="nav nav-pills nav-top nav-top-left">
+								<div class="head">Covid-19 App</div>
+							</ul>
+							<ul class="nav nav-pills nav-top nav-top-right">
+								<li class="login">
+									<a data-target=".form-wrapper" data-toggle="modal" ng-click="admin_logout()"><img style="margin-top:37px;" class="fa icon-x" src="images/icons/user1.png"/> </a>
+								</li>
+							</ul>
+                        </nav>
+					</div>	
+				</div>
+			</header>
+		
+				
+		</div>
+
+		<div id="offcanvas" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar">
+				<ul id="main-menu-offcanvas" class="uk-nav-offcanvas" data-uk-nav>
+					<h2 style="color:#000;padding:1.5em;font-weight:bold;font-family:Quicksand;">Online Portal</h2>
+					<span class="uk-parent">
+						<a href="admin_home.html"><img src="images/icons/house.png" class="fa icon"> &nbsp;&nbsp;&nbsp;Home</a>
+					</span>
+                    <span class="uk-parent">
+						<a style="cursor:pointer" ng-click="user_logout()" >
+						<img src="images/icons/smartphone-2.png" class="fa icon"> &nbsp;&nbsp;&nbsp;Logout</a>
+					</span>
+				</ul>
+			</div>
+		</div>
+
+            <div class="col-md1 simpleCart_shelfItem">
+
+                <div style="font-weight: 100;font-size: 1.6em ;text-align: center;color: #000000" >
+				Edit Vaccine</div>
+            </div>
+
+
+            <div class="content" style="margin-bottom:5em">
+                <div class="container">
+				<!--ng-repeat="x in details | filter : search_field |orderBy:'cus_id':true "-->
+		<div  class="row" >
+				<div  style="line-height:1em;color:#000;font-weight:300;margin-left:0px;
+				font-size:21px;"class="col-md-12">
+                    <div style="position: relative;left:5px;">
+                    <form>
+						  <div class="form-group">
+                    <form class="form" >
+					
+						<div class="styled-input">
+						   <select ng-model="cook_field_2" >
+									<option value="Available">Available</option>
+									<option value="Unavailable">Unavailable</option>
+							</select>
+						</div>
+						<div class="styled-input">
+                            <input  ng-model="cook_field_1" type="text"  />
+                            <label>Vaccine</label>
+                            <span></span> </div>
+                        
+						</form>						
+						</div>
+                    </form>
+                    </div>
+					
+					<a class="btn" ng-click="save_area()"  style="margin-left:0px;border-radius:4px; color:#fff; text-transform:none;background-color:#1a247e; width:100%; height:2em; padding:1px 0 1px 0;" 
+					 >
+					Save</a>
+
+					
+				</div>
+				
+			</div>
+
+                </div>
+				<!--
+			<footer class="footer"  style="border:none">
+				<div class="bottom">
+					<div class="container">
+						 <a data-target=".filter-wrapper" data-toggle="modal">
+						 <button type="button" class="btn btn-primary btn-block" style="width:100%;float:left;margin:0;border-right:1px solid #fff">My Account&nbsp;&nbsp;</button>
+						</a>
+						
+					</div>
+				</div>
+			</footer>
+			-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+       
+
+		<!-- Begin Style Switcher -->
+	
+		<!-- Vendor -->
+    <script src="js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="js/main.js"></script>
+
+
+
+
+    <script src="vendor/jquery/jquery.js"></script>
+		<script src="vendor/bootstrap/bootstrap.js"></script>
+		<script src="vendor/jquery.validation/jquery.validation.js"></script>
+		<script src="vendor/owlcarousel/owl.carousel.js"></script>
+		<script src="vendor/flexslider/jquery.flexslider-min.js"></script>
+		<script src="vendor/countdown/countdown.min.js"></script>
+		<script src="vendor/chosen/chosen.jquery.min.js"></script>
+		<script src="vendor/pricefilter/jquery.pricefilter.js"></script>
+		<script src="vendor/masonry/imagesloaded.pkgd.min.js"></script>
+		<script src="vendor/masonry/masonry.pkgd.min.js"></script>
+		<script src="vendor/uikit/uikit.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		
+		<!-- Theme Base, Components and  -->
+		<script src="js/theme.js"></script>
+		
+		<!-- Style Switcher -->
+		<script type="text/javascript" src="style-switcher/js/switcher.js"></script>
+		
+		<!-- angular js -->
+		<script src="js/angular_data.js"></script>
+		
+	<body onload="onLoad()">	
+	</body>
+</html>

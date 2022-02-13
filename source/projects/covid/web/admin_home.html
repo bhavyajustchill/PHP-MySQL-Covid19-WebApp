@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="keywords" content="HTML5 Template" />
+		<meta name="description" >
+		<meta name="author" content="pixelgeeklab.com">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Web Fonts -->
+		<link href='css/css.css' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="fonts/font.css">
+		
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.css" media="screen">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.theme.css" media="screen">
+		<link href="vendor/owl-carousel/owl.transitions.html" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="vendor/flexslider/flexslider.css" media="screen">
+		<link rel="stylesheet" href="vendor/chosen/chosen.css" media="screen">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-animate.css">
+
+        
+		<!-- Style Switcher-->
+
+		<!-- Head libs -->
+		<script src="vendor/modernizr/modernizr.js"></script>
+
+		<!--[if IE]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+
+		<!--[if lte IE 8]>
+			<script src="vendor/respond/respond.js"></script>
+			<script src="vendor/excanvas/excanvas.js"></script>
+		<![endif]-->
+
+        <style>
+            .page-wrap {
+                max-width: 75rem;
+                margin: 0 auto;
+            }
+
+            h1 {
+
+                font-size: 1.5rem;
+                letter-spacing: -1px;
+                margin: 1.25rem 0;
+            }
+
+            input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+                font-size: 0.75em;
+
+                top: -2.25rem;
+                -webkit-transition: all 0.125s ease;
+                transition: all 0.125s ease;
+            }
+
+            .styled-input {
+                left:10px;
+                width: 90%;
+                margin: 2rem 0 1rem;
+                position: relative;
+            }
+
+            .styled-input label {
+                color: #999;
+                padding: 1rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                -webkit-transition: all 0.25s ease;
+                transition: all 0.25s ease;
+                pointer-events: none;
+            }
+            input,
+            textarea {
+                position: relative;
+                height: 2.9em;
+                border: 0px solid #bebebe;
+                border-bottom-width: 1px;
+                width: 100%;
+            }
+
+            input ~ span,
+            textarea ~ span {
+                display: block;
+                width: 0;
+                height:1px;
+                background: #019432;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                -webkit-transition: all 0.125s ease;
+                transition: all 0.125s ease;
+            }
+
+            input:focus,
+            textarea:focus { outline: 0; }
+
+            input:focus ~ span,
+            textarea:focus ~ span {
+                width: 100%;
+                -webkit-transition: all 0.075s ease;
+                transition: all 0.075s ease;
+            }
+
+            textarea {
+                width: 100%;
+                min-height: 15em;
+            }
+        </style>
+
+<!-- script back button -->
+		<script src="cordova.js"></script>
+		<script>
+		function onLoad() 
+		{
+			document.addEventListener("deviceready", deviceReady, false);
+		}
+		function deviceReady() 
+		{
+			document.addEventListener("backbutton", backButtonCallback, false);
+		}
+		function backButtonCallback() 
+		{
+			navigator.app.backHistory();
+		}
+		</script>
+		<script>
+			function getCookie(name) {
+    		var dc = document.cookie;
+		    var prefix = name + "=";
+		    var begin = dc.indexOf("; " + prefix);
+		    if (begin == -1) {
+		        begin = dc.indexOf(prefix);
+		        if (begin != 0) return null;
+		    }
+		    else
+		    {
+		        begin += 2;
+		        var end = document.cookie.indexOf(";", begin);
+		        if (end == -1) {
+		        end = dc.length;
+		        }
+		    }
+		    return decodeURI(dc.substring(begin + prefix.length, end));
+		}
+	    var myCookie = getCookie("cook_admin_email");
+
+	    if (myCookie == "" || myCookie == null) {
+	        window.location = "admin_login.html";
+	    }
+		</script>
+</head>
+	
+	<!-- angular js -->
+	<script src="js/angular-1.3.js"></script>
+	<script src="js/angular_cookies.js"></script>
+<body ng-controller="myappCtrl" class="front bg-pattern-dark" style="background-color:#fff;" >
+		<div class="body">
+			<header id="header">
+				<div class="header-top" style="height:8em;">
+					<div class="container">
+						<a href="#offcanvas" class="uk-navbar-toggle" style="float:left; margin:50px 5px 10px 5px;" data-uk-offcanvas>
+							<span class="sr-only">Toggle navigation</span>
+							<i class="fa fa-bars"></i>
+						</a>
+                        <nav>
+							<ul class="nav nav-pills nav-top nav-top-left">
+								<div class="head">Covid-19 App</div>
+							</ul>
+							<ul class="nav nav-pills nav-top nav-top-right">
+								<li class="login">
+									<a data-target=".form-wrapper" data-toggle="modal" ng-click="admin_logout()"><img style="margin-top:37px;" class="fa icon-x" src="images/icons/user1.png"/> </a>
+								</li>
+							</ul>
+                        </nav>
+					</div>	
+				</div>
+			</header>
+		
+				
+		</div>
+		
+		<div id="offcanvas" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar">
+				<ul id="main-menu-offcanvas" class="uk-nav-offcanvas" data-uk-nav>
+					<h2 style="color:#000;padding:1.5em;font-weight:bold;font-family:Quicksand;">Online Portal</h2>
+					<span class="uk-parent">
+						<a href="admin_home.html"><img src="images/icons/house.png" class="fa icon"> &nbsp;&nbsp;&nbsp;Home</a>
+					</span>
+                    <span class="uk-parent">
+						<a style="cursor:pointer" ng-click="user_logout()" >
+						<img src="images/icons/smartphone-2.png" class="fa icon"> &nbsp;&nbsp;&nbsp;Logout</a>
+					</span>
+				</ul>
+			</div>
+		</div>
+		
+            <div class="col-md1 simpleCart_shelfItem">
+
+                <div style="font-weight: 100;font-size: 1.6em ;text-align: center;color: #000000" >
+				Admin Home</div>
+            </div>
+	<div class="content" style="margin-top:3em">
+		<div class="container">
+		
+		
+		
+			<section class="content-inner">
+			<div class="container-fluid">
+					<div class="col-md-4" ng-repeat="x in balance" >
+						<a  ng-bind="x.balance"></a>
+					</div>
+
+				<div class="row" style="margin-left:20px;">
+				
+				
+					<div class="col-md-6" >
+							<img style="width:80px; height:80px;"  src="images/health-report(1).png"/>
+						<a href="report_all_vaccine.html" style="border-radius:2px;box-shadow:1px 1px 1px 1.5px #B6B6B4; margin:1em 0 3em 1em; font-weight:bold;color:rgb(55,71,79);font-size:1.11em;padding:0.3em">
+						Covid  Report </a>
+					</div>
+					<div class="col-md-6" >
+							<img style="width:80px; height:80px;"  src="images/mask(1).png"/>
+						<a href="report.html" style="border-radius:2px;box-shadow:1px 1px 1px 1.5px #B6B6B4; margin:1em 0 3em 1em; font-weight:bold;color:rgb(55,71,79);font-size:1.11em;padding:0.3em">
+						Guidelines Report </a>
+					</div>
+				
+			
+					<div class="col-md-6" >
+							<img style="width:80px; height:80px;"  src="images/mask.png"/>
+						<a href="view_all_child.html" style="border-radius:2px;box-shadow:1px 1px 1px 1.5px #B6B6B4; margin:1em 0 3em 1em; font-weight:bold;color:rgb(55,71,79);font-size:1.11em;padding:0.3em">
+						All Patient</a>
+					</div>
+					
+					<div class="col-md-6" >
+							<img style="width:80px; height:80px;"  src="images/safety-suit.png"/>
+						<a href="view_all_hospital.html" style="font-family:Quicksand;border-radius:2px;box-shadow:1px 1px 1px 1.5px #B6B6B4; margin:1em 0 3em 1em; font-weight:bold;color:rgb(55,71,79);font-size:1.11em;padding:0.3em">
+						Approve Hospital</a>
+					</div>
+					
+					<div class="col-md-6" >
+							<img style="width:80px; height:80px;"  src="images/vaccine.png"/>
+						<a href="view_user_appoinment.html" style="font-family:Quicksand;border-radius:2px;box-shadow:1px 1px 1px 1.5px #B6B6B4; margin:1em 0 3em 1em; font-weight:bold;color:rgb(55,71,79);font-size:1.11em;padding:0.3em">
+						Booking Report</a>
+					</div>
+					<!--
+					<div class="col-md-6" >
+							<img style="width:80px; height:80px;"  src="images/calendar.png"/>
+						<a href="view_all_appoinment.html" style="font-family:Quicksand;border-radius:2px;box-shadow:1px 1px 1px 1.5px #B6B6B4; margin:1em 0 3em 1em; font-weight:bold;color:rgb(55,71,79);font-size:1.11em;padding:0.3em">
+						Today Booking</a>
+					</div>
+					-->
+					
+					
+					<div class="col-md-6" >
+							<img style="width:80px; height:80px;"  src="images/safety-suit.png"/>
+						<a href="create_dept.html" style="font-family:Quicksand;border-radius:2px;box-shadow:1px 1px 1px 1.5px #B6B6B4; margin:1em 0 3em 1em; font-weight:bold;color:rgb(55,71,79);font-size:1.11em;padding:0.3em">
+						Add Hospital</a>
+					</div>
+					
+					
+					<div class="col-md-6" >
+							<img style="width:80px; height:80px;"  src="images/injection.png"/>
+						<a href="create_area.html" style="font-family:Quicksand;border-radius:2px;box-shadow:1px 1px 1px 1.5px #B6B6B4; margin:1em 0 3em 1em; font-weight:bold;color:rgb(55,71,79);font-size:1.11em;padding:0.3em">
+						Add Vaccine</a>
+					</div>
+				</div>
+			</div>
+
+			</section>
+		
+		
+	
+				<!--<h2 class="content-sub-heading" style="text-align:center;color:rgb(69,90,100);font-family:Quicksand;">
+				Analysis Report</h2>
+								<div class="row" style="margin-left:50px;">
+					<div class="col-md-6" >
+						<h2 class="content-sub-heading" style="text-align:center;color:rgb(69,90,100);font-family:Quicksand;">
+						Enquries</h2>
+					<table class="table table-hover table-stripe" title="Default Tabl">
+						<thead class="fontsforweb_fontid_1409" style="color:#000;">
+							<tr>
+								<th >No of Enquries</th>
+								<th >Estimated Cost</th>
+							</tr>
+						</thead>
+						<tbody ng-repeat="x in enquiry">
+							<tr>
+								<td ng-bind="x.total"></td>
+								<td ng-bind="x.estimate_cost"></td>
+							</tr>
+													
+						</tbody>
+					</table>
+						
+					</div>
+					<div class="col-md-6" >
+						<h2 class="content-sub-heading" style="text-align:center;color:rgb(69,90,100);font-family:Quicksand;">
+						Project's Ongoing</h2>
+						<table class="table table-hover table-stripe" title="Default Tabl">
+							<thead class="fontsforweb_fontid_1409" style="color:#000;">
+								<tr>
+									<th >No of Projects</th>
+									<th >Estimated Payment</th>
+									<th >Payed</th>
+									<th >Pending Payment</th>
+								</tr>
+							</thead>
+							<tbody ng-repeat="x in project ">
+								<tr>
+									<td ng-bind="x.total"></td>
+									<td ng-bind="x.estimate_cost"></td>
+									<td ng-bind="x.payed"></td>
+									<td >{{x.estimate_cost - x.payed}}</td>
+								</tr>
+														
+							</tbody>
+						</table>
+					</div>
+				
+
+			</div>-->
+	<!--
+			<h2 class="content-sub-heading" style="text-align:center;color:rgb(69,90,100);font-family:Quicksand;">
+				Project Management</h2>
+				<!-- Search Results 
+				<div style="position: relative;left: 10px;">
+				<!--<h2 class="content-sub-heading" style="color:rgb(69,90,100);font-family:Quicksand;">Search Results</h2>
+			
+                    <form class="form"  >
+					<div class="styled-input">
+                            <input ng-model="search_field" type="text"  />
+                            <label>Search</label>
+                            <span></span> 
+							</div>
+					</form>
+				</div>
+					<div class="col-md-6" >
+						<table class="table table-hover table-stripe" title="Default Tabl">
+							<thead class="fontsforweb_fontid_1409" style="color:#000;">
+								<tr>
+									<th >Project</th>
+									<th >Student Name</th>
+									<th >Start Date</th>
+									<th >Delivery Date</th>
+									<th >% Completed</th>
+									<th >Mobile</th>
+									<th >Email</th>
+								</tr>
+							</thead>
+							<tbody ng-repeat="x in task ">
+								<tr>
+								<td ng-bind="x.lname"></td>
+								<td ng-bind="x.email"></td>
+									<td ng-bind="x.chequeno"></td>
+									<td ng-bind="x.bank"></td>
+								</tr>
+														
+							</tbody>
+						</table>
+					</div> -->
+			</div>		
+				
+		</div>
+
+		<script src="vendor/jquery/jquery.js"></script>
+		<script src="vendor/bootstrap/bootstrap.js"></script>
+		<script src="vendor/jquery.validation/jquery.validation.js"></script>
+		<script src="vendor/owlcarousel/owl.carousel.js"></script>
+		<script src="vendor/flexslider/jquery.flexslider-min.js"></script>
+		<script src="vendor/countdown/countdown.min.js"></script>
+		<script src="vendor/chosen/chosen.jquery.min.js"></script>
+		<script src="vendor/pricefilter/jquery.pricefilter.js"></script>
+		<script src="vendor/masonry/imagesloaded.pkgd.min.js"></script>
+		<script src="vendor/masonry/masonry.pkgd.min.js"></script>
+		<script src="vendor/uikit/uikit.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+		
+		<!-- Style Switcher -->
+		<script type="text/javascript" src="style-switcher/js/switcher.js"></script>
+		
+	<!-- angular js -->
+	<script src="js/angular_data.js"></script>
+	<body onload="onLoad()">		
+</body>
+</html>

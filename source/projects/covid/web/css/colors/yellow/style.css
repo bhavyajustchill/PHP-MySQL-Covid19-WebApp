@@ -1,0 +1,342 @@
+/* font size */
+/* color */
+/* bg color */
+/* color */
+/* line 10, ../../../sass/colors/yellow/style.scss */
+a:hover {
+  color: #e9bf1d;
+}
+
+/* line 14, ../../../sass/colors/yellow/style.scss */
+.error {
+  color: #e9bf1d;
+}
+
+/* line 17, ../../../sass/colors/yellow/style.scss */
+.btn-primary {
+  background-color: #e9bf1d;
+  border-color: #e9bf1d;
+}
+/* line 20, ../../../sass/colors/yellow/style.scss */
+.btn-primary:hover {
+  background-color: black;
+  border-color: black;
+}
+
+/* line 27, ../../../sass/colors/yellow/style.scss */
+.btn-default:hover {
+  background-color: #e9bf1d;
+  border-color: #e9bf1d;
+  color: #fff;
+}
+
+/* line 33, ../../../sass/colors/yellow/style.scss */
+.btn-active {
+  background-color: #e9bf1d;
+  border-color: #e9bf1d;
+}
+
+/* line 38, ../../../sass/colors/yellow/style.scss */
+.close:hover, .close:focus {
+  color: #e9bf1d;
+}
+
+/* line 42, ../../../sass/colors/yellow/style.scss */
+.divider {
+  background-color: #e9bf1d;
+}
+
+/* line 45, ../../../sass/colors/yellow/style.scss */
+.bg-color1 {
+  background-color: #e9bf1d !important;
+}
+
+/* line 48, ../../../sass/colors/yellow/style.scss */
+.bg-color2 {
+  background-color: #dd4b39 !important;
+}
+
+/* line 51, ../../../sass/colors/yellow/style.scss */
+.bg-color3 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* line 54, ../../../sass/colors/yellow/style.scss */
+.bg-color4 {
+  background-color: #ededed !important;
+}
+
+/* line 57, ../../../sass/colors/yellow/style.scss */
+.bg-color5 {
+  background-color: #fff !important;
+}
+
+/* line 60, ../../../sass/colors/yellow/style.scss */
+.bg-color6 {
+  background-color: #222222;
+}
+
+/* line 63, ../../../sass/colors/yellow/style.scss */
+.bg-color7 {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Header */
+/* line 70, ../../../sass/colors/yellow/style.scss */
+.nav-top > li > a:hover, .nav-top > li > a:focus {
+  color: #e9bf1d;
+}
+/* line 72, ../../../sass/colors/yellow/style.scss */
+.nav-top > li > a:hover .fa, .nav-top > li > a:focus .fa {
+  color: #e9bf1d;
+}
+
+/* line 81, ../../../sass/colors/yellow/style.scss */
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  color: #e9bf1d;
+}
+/* line 85, ../../../sass/colors/yellow/style.scss */
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  color: #e9bf1d;
+}
+
+/* line 92, ../../../sass/colors/yellow/style.scss */
+.nav-main-menu > li > a:after {
+  background-color: #e9bf1d;
+}
+/* line 95, ../../../sass/colors/yellow/style.scss */
+.nav-main-menu > li > a:hover, .nav-main-menu > li > a:focus {
+  background-color: transparent;
+}
+
+/* line 103, ../../../sass/colors/yellow/style.scss */
+.menu-column-inner .product-price ins {
+  color: #e9bf1d;
+}
+
+/* line 111, ../../../sass/colors/yellow/style.scss */
+.header-top .nav-top > li > a:hover, .header-top .nav-top > li > a:focus {
+  color: #e9bf1d;
+}
+/* line 113, ../../../sass/colors/yellow/style.scss */
+.header-top .nav-top > li > a:hover .fa, .header-top .nav-top > li > a:focus .fa {
+  color: #e9bf1d;
+}
+/* line 122, ../../../sass/colors/yellow/style.scss */
+.header-top .shopping-cart a span span {
+  color: #e9bf1d;
+}
+
+/* countdown */
+/* line 130, ../../../sass/colors/yellow/style.scss */
+.countdown {
+  border-top-color: #e9bf1d;
+}
+
+/* grid-tabs */
+/* line 138, ../../../sass/colors/yellow/style.scss */
+.grid-tabs > li.active > a, .grid-tabs > li.active > a:hover, .grid-tabs > li.active > a:focus {
+  border-top-color: #e9bf1d;
+}
+
+/* search */
+/* line 146, ../../../sass/colors/yellow/style.scss */
+.form-search .btn:hover, .form-search .btn:focus {
+  color: #e9bf1d;
+}
+
+/* line 154, ../../../sass/colors/yellow/style.scss */
+.cat-thumb-act a:hover {
+  color: #e9bf1d;
+}
+
+@media (max-width: 360px) {
+  /* line 161, ../../../sass/colors/yellow/style.scss */
+  .cat-thumb-item-content-wrap.bg-color1 {
+    background-color: rgba(233, 191, 29, 0.8) !important;
+  }
+}
+
+/* line 168, ../../../sass/colors/yellow/style.scss */
+.cat-thumb-video .cat-thumb-item-img:after {
+  background-color: rgba(233, 191, 29, 0.1);
+}
+
+/* line 173, ../../../sass/colors/yellow/style.scss */
+.cat-caption {
+  background-color: rgba(233, 191, 29, 0.9);
+}
+
+/* line 180, ../../../sass/colors/yellow/style.scss */
+.owl-theme .owl-controls .owl-buttons div:hover {
+  background-color: #e9bf1d;
+  border-color: #e9bf1d;
+}
+
+/* post img slide */
+/* line 191, ../../../sass/colors/yellow/style.scss */
+.pgl-img-slide .owl-controls .owl-buttons div:hover {
+  background-color: #e9bf1d;
+  border-color: #e9bf1d;
+}
+
+/* second slides */
+/* line 201, ../../../sass/colors/yellow/style.scss */
+.second-slides .slide-item-caption-info h1 {
+  color: #e9bf1d;
+}
+
+/* line 208, ../../../sass/colors/yellow/style.scss */
+.highlight-slide h3 a:hover, .highlight-slide h3 a:focus, .highlight-slide .product-price ins {
+  color: #e9bf1d;
+}
+
+/* line 215, ../../../sass/colors/yellow/style.scss */
+.product-cat a:hover {
+  color: #e9bf1d;
+}
+
+/* line 221, ../../../sass/colors/yellow/style.scss */
+.thumb-act-more .btn-cart {
+  background-color: #e9bf1d;
+}
+
+/* line 227, ../../../sass/colors/yellow/style.scss */
+.list-review a:hover, .list-review a:focus {
+  color: #e9bf1d;
+}
+
+/* summary */
+/* line 236, ../../../sass/colors/yellow/style.scss */
+.summary .product-cat a:hover, .summary .product-cat a:focus {
+  color: #e9bf1d;
+}
+
+/* _shopping-cart */
+/* line 243, ../../../sass/colors/yellow/style.scss */
+.product-subtotal, .total .amount {
+  color: #e9bf1d;
+}
+
+/* Blog */
+/* line 247, ../../../sass/colors/yellow/style.scss */
+.post-date {
+  background-color: #e9bf1d;
+}
+
+/* line 253, ../../../sass/colors/yellow/style.scss */
+.post-large blockquote footer cite, .post-mansory-item .post-mid blockquote footer cite {
+  color: #e9bf1d;
+}
+
+/* line 260, ../../../sass/colors/yellow/style.scss */
+.post-info a:hover, .post-info a:focus {
+  color: #e9bf1d;
+}
+
+/* Sidebar */
+/* line 265, ../../../sass/colors/yellow/style.scss */
+.blk-categories {
+  background-color: #e9bf1d;
+}
+
+/* line 269, ../../../sass/colors/yellow/style.scss */
+.blk-highlight:after {
+  border-top-color: #e9bf1d;
+}
+/* line 272, ../../../sass/colors/yellow/style.scss */
+.blk-highlight h4 {
+  color: #e9bf1d;
+}
+
+/* featured-foot */
+/* line 278, ../../../sass/colors/yellow/style.scss */
+.contact-info-wrap:after {
+  background-color: rgba(233, 191, 29, 0.9);
+}
+
+/* line 284, ../../../sass/colors/yellow/style.scss */
+.newsletter-form .form-control:focus {
+  border-bottom-color: #e9bf1d;
+}
+
+/* Scroll to Top */
+/* line 291, ../../../sass/colors/yellow/style.scss */
+.scroll-to-top:hover {
+  background-color: #e9bf1d;
+  border-color: #e9bf1d;
+}
+
+/* Panel in offcanvas */
+/* line 298, ../../../sass/colors/yellow/style.scss */
+.uk-offcanvas .uk-panel h3 a:hover, .uk-offcanvas .uk-panel h3 a:focus {
+  color: #e9bf1d;
+}
+/* line 301, ../../../sass/colors/yellow/style.scss */
+.uk-offcanvas .uk-panel .product-price ins {
+  color: #e9bf1d;
+}
+
+/* line 307, ../../../sass/colors/yellow/style.scss */
+.uk-nav-offcanvas a:hover, .uk-nav-offcanvas a:focus {
+  color: #e9bf1d;
+}
+
+/* line 313, ../../../sass/colors/yellow/style.scss */
+.uk-nav-sub .active a {
+  color: #e9bf1d;
+}
+
+@media (max-width: 991px) {
+  /* line 319, ../../../sass/colors/yellow/style.scss */
+  .uk-navbar-toggle:hover, .uk-navbar-toggle:focus {
+    color: #e9bf1d;
+  }
+}
+/* #Footer */
+/* line 327, ../../../sass/colors/yellow/style.scss */
+#footer a:hover {
+  color: #e9bf1d;
+}
+/* line 332, ../../../sass/colors/yellow/style.scss */
+#footer address a:hover, #footer .footer-copyright p a:hover {
+  color: #e9bf1d;
+}
+/* line 336, ../../../sass/colors/yellow/style.scss */
+#footer .latest-tweets a {
+  color: #e9bf1d;
+}
+/* line 338, ../../../sass/colors/yellow/style.scss */
+#footer .latest-tweets a:hover {
+  color: #777777;
+}
+/* line 343, ../../../sass/colors/yellow/style.scss */
+#footer .card-icons a:hover {
+  color: #e9bf1d;
+}
+
+/* line 350, ../../../sass/colors/yellow/style.scss */
+.social-icons a:after {
+  background-color: #e9bf1d;
+}
+
+/* line 357, ../../../sass/colors/yellow/style.scss */
+#footer.bg-color6 a:hover {
+  color: #e9bf1d;
+}
+/* line 362, ../../../sass/colors/yellow/style.scss */
+#footer.bg-color6 address a:hover, #footer.bg-color6 .footer-copyright p a:hover {
+  color: #e9bf1d;
+}
+/* line 366, ../../../sass/colors/yellow/style.scss */
+#footer.bg-color6 .latest-tweets a {
+  color: #e9bf1d;
+}
+/* line 368, ../../../sass/colors/yellow/style.scss */
+#footer.bg-color6 .latest-tweets a:hover {
+  color: #777777;
+}
+/* line 373, ../../../sass/colors/yellow/style.scss */
+#footer.bg-color6 .card-icons a:hover {
+  color: #e9bf1d;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="keywords" content="HTML5 Template" />
+		<meta name="description" >
+		<meta name="author" content="pixelgeeklab.com">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Web Fonts  -->
+		<link href='css/css.css' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="fonts/font.css">
+		
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.css" media="screen">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.theme.css" media="screen">
+		<link href="vendor/owl-carousel/owl.transitions.html" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="vendor/flexslider/flexslider.css" media="screen">
+		<link rel="stylesheet" href="vendor/chosen/chosen.css" media="screen">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-animate.css">
+
+        
+		<!-- Style Switcher-->
+
+		<!-- Head libs -->
+		<script src="vendor/modernizr/modernizr.js"></script>
+
+		<!--[if IE]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+
+		<!--[if lte IE 8]>
+			<script src="vendor/respond/respond.js"></script>
+			<script src="vendor/excanvas/excanvas.js"></script>
+		<![endif]-->
+
+        <style>
+			.container {
+				background-color: #019432;
+				position:relative;
+				margin-top:50px;
+				margin-bottom:0px;
+			}
+			
+			.login a{
+			margin-left:0px;
+			text-align:center;
+			font-size:22px;
+			color:#ffffff;
+			}
+			.row input, textarea {
+			position:relative;
+			color:#fff;
+			border: 2px solid white;
+			background-color: #019432;
+			width:300px;
+			line-height:40px;
+			margin-bottom:10px;
+			}
+
+			.row{
+			text-align:center;
+			}
+			.login p{
+			position:relative;
+			text-align:center;
+			font-size:30px;
+			color:#ffffff;
+			}
+			
+			h2{
+			position:relative;
+			text-align:center;
+			font-size:80px;
+			color:#ffffff;
+			font-weight:200;
+			}
+			h3{
+			text-align:center;
+			font-size:80px;
+			color:#ffffff;
+			font-weight:200;
+			}
+			img{
+			align:middle;
+			}
+			
+        </style>
+
+<!-- script back button -->
+		<script src="cordova.js"></script>
+		<script>
+		function onLoad() 
+		{
+			document.addEventListener("deviceready", deviceReady, false);
+		}
+		function deviceReady() 
+		{
+			document.addEventListener("backbutton", backButtonCallback, false);
+		}
+		function backButtonCallback() 
+		{
+			navigator.app.backHistory();
+		}
+		</script>
+</head>
+	
+	<!-- angular js -->
+	<script src="js/angular-1.3.js"></script>
+	<script src="js/angular_cookies.js"></script>
+<body  ng-controller="myappCtrl" >
+		<div class="container">
+		
+		<h2>Forgot Password </h2>
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+                    <form>
+                           <input  ng-model="email" type="text" placeholder="Email" />
+                           <input  ng-model="field_3" type="text" placeholder="What is your pet animal name?" />
+                           <input  ng-model="field_4" type="text" placeholder="What is your school best friend name?" />
+                           <input  ng-model="password" type="password"  placeholder="New Password"  />
+ 					</form>						
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+			<div class="login">
+				<center>	
+					<button ng-click="newpassword()" style="background-color: #045762;font-weight:bold;color:#fff;letter-spacing:1px">Login</button>
+				</center>
+				
+			</div>
+
+		</div>
+
+		<script src="vendor/jquery/jquery.js"></script>
+		<script src="vendor/bootstrap/bootstrap.js"></script>
+		<script src="vendor/jquery.validation/jquery.validation.js"></script>
+		<script src="vendor/owlcarousel/owl.carousel.js"></script>
+		<script src="vendor/flexslider/jquery.flexslider-min.js"></script>
+		<script src="vendor/countdown/countdown.min.js"></script>
+		<script src="vendor/chosen/chosen.jquery.min.js"></script>
+		<script src="vendor/pricefilter/jquery.pricefilter.js"></script>
+		<script src="vendor/masonry/imagesloaded.pkgd.min.js"></script>
+		<script src="vendor/masonry/masonry.pkgd.min.js"></script>
+		<script src="vendor/uikit/uikit.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+		
+		<!-- Style Switcher -->
+		<script type="text/javascript" src="style-switcher/js/switcher.js"></script>
+		
+	<!-- angular js -->
+	<script src="js/angular_user.js"></script>
+	<body onload="onLoad()">		
+</body>
+</html>

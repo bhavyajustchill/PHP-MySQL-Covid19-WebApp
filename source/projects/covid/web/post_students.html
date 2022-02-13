@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="keywords" content="HTML5 Template" />
+		<meta name="description" >
+		<meta name="author" >
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Web Fonts  -->
+		<link href='css/css.css' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="fonts/font.css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.css" media="screen">
+		<link rel="stylesheet" href="vendor/owlcarousel/owl.theme.css" media="screen">
+		<link href="vendor/owl-carousel/owl.transitions.html" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="vendor/flexslider/flexslider.css" media="screen">
+		<link rel="stylesheet" href="vendor/chosen/chosen.css" media="screen">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen">
+        <link rel="stylesheet" href="css/colors/style.css" media="screen">
+
+        <link rel="stylesheet" href="css/datetimepicker.less" media="screen">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-animate.css">
+
+		<!-- Style Switcher-->
+
+		<!-- Head libs -->
+		<script src="vendor/modernizr/modernizr.js"></script>
+
+		<!--[if IE]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+
+
+			<script src="vendor/respond/respond.js"></script>
+			<script src="vendor/excanvas/excanvas.js"></script>
+            <link rel="stylesheet" type="text/css" href="css/DateTimePicker.css" />
+
+            <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+            <script type="text/javascript" src="js/DateTimePicker.js"></script>
+
+
+            <link rel="stylesheet" type="text/css" href="css/DateTimePicker-ltie9.css" />
+            <script type="text/javascript" src="js/DateTimePicker-ltie9.js"></script>
+
+
+        <style>
+			.page-wrap {
+                max-width: 75rem;
+                margin: 0 auto;
+            }
+
+            h1 {
+
+                font-size: 1.5rem;
+                letter-spacing: -1px;
+                margin: 1.25rem 0;
+            }
+
+            input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+                font-size: 0.75em;
+
+                top: -2.25rem;
+                -webkit-transition: all 0.125s ease;
+                transition: all 0.125s ease;
+            }
+
+            .styled-input {
+				left:10px;
+                width: 90%;
+                margin: 2rem 0 1rem;
+                position: relative;
+            }
+
+            .styled-input label {
+                color: #999;
+                padding: 1rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                -webkit-transition: all 0.25s ease;
+                transition: all 0.25s ease;
+                pointer-events: none;
+            }
+
+
+
+            input,
+            textarea {
+			font-weight:bold;
+                position: relative;
+                height: 2.9em;
+                border: 0px solid #bebebe;
+                border-bottom-width: 1px;
+                width: 100%;
+            }
+
+            input ~ span,
+            textarea ~ span {
+                display: block;
+                width: 0;
+                height:1px;
+                background: #019432;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                -webkit-transition: all 0.125s ease;
+                transition: all 0.125s ease;
+            }
+
+            input:focus,
+            textarea:focus { outline: 0; }
+
+            input:focus ~ span,
+            textarea:focus ~ span {
+                width: 100%;
+                -webkit-transition: all 0.075s ease;
+                transition: all 0.075s ease;
+            }
+
+            textarea {
+                width: 100%;
+                min-height: 15em;
+            }
+        </style>
+
+<!-- script back button -->
+	<script src="cordova.js"></script>
+	<script>
+	function onLoad() 
+	{
+		document.addEventListener("deviceready", deviceReady, false);
+	}
+	function deviceReady() 
+	{
+		document.addEventListener("backbutton", backButtonCallback, false);
+	}
+	function backButtonCallback() 
+	{
+		nnavigator.app.backHistory();
+	}
+	</script>
+
+
+	<!-- angular js -->
+	<script src="js/angular-1.3.js"></script>
+	<script src="js/angular_cookies.js"></script>
+	
+	</head>
+	<body   ng-controller="myappCtrl" style="background-color: #eafbea" class="front bg-pattern-dark">
+		<div class="body">
+			<header id="header">
+				<div class="header-top" style="height:8em;">
+					<div class="container">
+						<a href="#offcanvas" class="uk-navbar-toggle" style="float:left; margin:50px 5px 10px 5px;" data-uk-offcanvas>
+							<span class="sr-only">Toggle navigation</span>
+							<i class="fa fa-bars"></i>
+						</a>
+                        <nav>
+							<ul class="nav nav-pills nav-top nav-top-left">
+								<div class="head">Covid-19 App</div>
+							</ul>
+														
+							<ul class="nav nav-pills nav-top nav-top-right">
+								<li class="login">
+									<a data-target=".form-wrapper" data-toggle="modal"><img style="margin-top:37px;" class="fa icon-x" src="images/icons/user1.png"/> </a>
+								</li>
+							</ul>
+                        </nav>
+					</div>	
+				</div>
+			</header>
+			
+			<br>
+			<div style="font-weight: 100;font-size: 1.6em ;text-align: center;color: #000000" >
+			Add Covid Guidelines </div>
+			<br>
+			
+            <div class="col-md1 simpleCart_shelfItem">
+
+                <div class="container">
+                    <div style="position: relative;left: 10px;">
+                    <form class="form" >
+						<div class="styled-input">
+                            <input  ng-model="field_1" type="text"  />
+                            <label>Sympton</label>
+                            <span></span> </div>
+                        
+                        <div class="styled-input">
+                            <input  ng-model="field_2" type="text"  />
+                            <label>Age</label>
+                            <span></span> </div>
+						                        
+												
+						<div class="styled-input">
+						   <select ng-model="field_3" >
+									<option value="">Gender</option>
+									<option value="Both">Both</option>
+									<option value="Male">Male</option>
+									<option value="Female">Female</option>
+							</select>
+						</div>
+						<div class="styled-input">
+                            <input ng-model="field_4" type="text"  />
+                            <label>Remedies 1</label>
+						</div>
+						<div class="styled-input">
+						
+                            <input ng-model="field_5" type="text"  />
+                            <label>Description</label>
+						</div>
+						
+						<div class="styled-input">
+                            <input ng-model="field_6" type="text"  />
+                            <label>Hints </label>
+						</div>
+						</div>
+			   <!-- Button -->
+				<button ng-click="create_student()"  type="button"  class="btn btn-primary btn-block">Submit</button>			</div>
+			<br>
+						</form>						
+                    
+                    </div>
+				</div>
+        </div>
+		<br>
+		</div>
+
+        </div>
+		<div id="offcanvas" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar">
+				<ul id="main-menu-offcanvas" class="uk-nav-offcanvas" data-uk-nav>
+					<h2 style="color:#000;font-size:25px;padding:1.5em;margin-bottom:15px;font-weight:bold;font-family:Quicksand;">Online Portal</h2>
+					<span class="uk-parent">
+						<a href="hosp_home.html"><img src="images/icons/house.png" class="fa icon"> &nbsp;&nbsp;&nbsp;Home</a>
+					</span>
+                    <span class="uk-parent">
+						<a style="cursor:pointer" ng-click="user_logout()"><img src="images/icons/smartphone-2.png" class="fa icon"> &nbsp;&nbsp;&nbsp;Logout</a>
+					</span>
+				</ul>
+			</div>
+		</div>
+		
+
+		<!-- Begin Style Switcher -->
+	
+		<!-- Vendor -->
+			<script src="vendor/jquery.validation/jquery.validation.js"></script>
+		<script src="vendor/owlcarousel/owl.carousel.js"></script>
+		<script src="vendor/flexslider/jquery.flexslider-min.js"></script>
+		<script src="vendor/countdown/countdown.min.js"></script>
+		<script src="vendor/chosen/chosen.jquery.min.js"></script>
+		<script src="vendor/pricefilter/jquery.pricefilter.js"></script>
+		<script src="vendor/masonry/imagesloaded.pkgd.min.js"></script>
+		<script src="vendor/masonry/masonry.pkgd.min.js"></script>
+		<script src="vendor/uikit/uikit.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+		
+		<!-- Style Switcher -->
+		<script type="text/javascript" src="style-switcher/js/switcher.js"></script>
+
+
+        <script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+        <script type="text/javascript" src="js/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+        <script type="text/javascript">
+            $('.form_datetime').datetimepicker({
+                //language:  'fr',
+                weekStart: 1,
+                todayBtn:  1,
+                autoclose: 1,
+                todayHighlight: 1,
+                startView: 2,
+                forceParse: 0,
+                showMeridian: 1
+            });
+            $('.form_date').datetimepicker({
+                language:  'fr',
+                weekStart: 1,
+                todayBtn:  1,
+                autoclose: 1,
+                todayHighlight: 1,
+                startView: 2,
+                minView: 2,
+                forceParse: 0
+            });
+            $('.form_time').datetimepicker({
+                language:  'fr',
+                weekStart: 1,
+                todayBtn:  1,
+                autoclose: 1,
+                todayHighlight: 1,
+                startView: 1,
+                minView: 0,
+                maxView: 1,
+                forceParse: 0
+            });
+        </script>
+		
+	<!-- angular js -->
+	<script src="js/angular_data.js"></script>
+<body onload="onLoad()">		
+	</body>
+</html>
