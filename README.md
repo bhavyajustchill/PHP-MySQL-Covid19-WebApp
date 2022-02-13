@@ -12,7 +12,7 @@ This is my academic project for my final year in my B.Sc. (IT)
 
 - Following activities are covered through our application:
   - Admin:
-    - Login/Register  
+    - Login  
     - View reports of all patients 
     - View reports of vaccines
     - Approve hospitals
