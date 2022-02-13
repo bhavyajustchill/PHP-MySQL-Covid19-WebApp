@@ -1,2 +1,2 @@
-* linguist-vendored
+source/* linguist-vendored
 *.php linguist-vendored=false
