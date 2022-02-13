@@ -1,4 +1,4 @@
 *.html linguist-language=PHP
 *.css linguist-language=PHP
 *.js linguist-language=PHP
-database/covid.sql linguist-language=TSQL
+linguist-language=SQL
